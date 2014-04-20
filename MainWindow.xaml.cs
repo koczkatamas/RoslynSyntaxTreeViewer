@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.CodeAnalysis.CSharp;
+using Path = System.IO.Path;
 
 namespace RoslynSyntaxTreeViewer
 {
@@ -42,6 +43,7 @@ namespace RoslynSyntaxTreeViewer
                 return;
 
             var file = ((string[])e.Data.GetData(DataFormats.FileDrop)).First();
+            Title = "Roslyn Syntax Tree Viewer - " + Path.GetFileName(file);
             var fileContent = File.ReadAllText(file);
             AppModel.Instance.LoadSource(fileContent);
         }

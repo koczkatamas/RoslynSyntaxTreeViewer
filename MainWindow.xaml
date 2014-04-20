@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         xmlns:local="clr-namespace:RoslynSyntaxTreeViewer"
-        Title="MainWindow" Height="350" Width="525" Loaded="MainWindow_OnLoaded" DataContext="{StaticResource appModel}" Drop="MainWindow_OnDrop" AllowDrop="True">
+        Title="Roslyn Syntax Tree Viewer" Height="350" Width="525" Loaded="MainWindow_OnLoaded" DataContext="{StaticResource appModel}" Drop="MainWindow_OnDrop" AllowDrop="True">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
